@@ -1,437 +1,405 @@
 <snippet>
-    <content> 
-      <!DOCTYPE html>
-<html lang="es">
-<head>
-	<title>AQUALIM-Laboratorio Ambiental </title>
+  <content>
+    <!DOCTYPE html>
+    <html lang="es">
 
-    <meta name="google-site-verification" content=" google65a6ed9d2901edca">
-  <meta name="description" content="  
+    <head>
+      <title>AQUALIM-Laboratorio Ambiental </title>
 
-AQUALIM es una empresa Casanareña acreditada por el IDEAM, dedicada a la prestación de servicios de laboratorio ambiental en la matriz de aguas, aplicando el sistema de gestión basado en la norma NTC-ISO/IEC17025:2005.
+      <meta name="google-site-verification" content=" google65a6ed9d2901edca">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+      <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+      <meta name="description" content=" AQUALIM es una empresa Casanareña acreditada por el IDEAM, dedicada a la prestación de servicios de laboratorio ambiental en la matriz de aguas, aplicando el sistema de gestión basado en la norma NTC-ISO/IEC17025:2005.">
+      <link href="http://antocas.com/blog/wp-content/themes/fantasia/images/favicon.ico" rel="icon" type="image/x-icon" />
+      <script src="https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit" async defer></script>
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="../engine1/style.css" />
+      <script type="text/javascript" src="../js/enlargeit.js"></script>
+
+    </head>
+
+    <body oncontextmenu="return false" onkeydown="return true">
+      <div id='menuLogo'>
+        <img class="img-rounded img-responsive" data-src="holder.js/900x500/auto" alt="900x500"
+          src="../assets/images/aqualim.jpg">
+      </div>
+      <div class="container">
+
+        <a class="toggleMenu" href="#" style="display: none">Menu</a>
+        <ul class="nav">
+          <li class="test">
+          <li><a href=""><span> </span></a></li>
+          <li><a href="../index.html"><span>Inicio</span></a></li>
+          <li><a href="nosotros.html"><span class='down'>Nosotros</span></a></li>
+          <li><a href="politicas.html"><span class='down'>Políticas</span></a> </li>
+          <li><a href="servicios.html"><span class='down'>Servicios</span></a></li>
+          <li class='top'><a class='top_link' href="aquatienda.html"><span class='down'>Aquatienda</span></a></li>
+          <li class='top'><a class='top_link' href="correo.html"><span class='down'>Contáctenos</span></a></li>
+          <li class='top'><a class='top_link' href="califiquenos.html"><span class='down'>Calífiquenos</span></a></li>
+          <li class='top'><a class='top_link' href="galeria.html"><span class='down'>Galería</span></a></li>
+          </li>
+        </ul>
+      </div>
 
 
-">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <link href="http://antocas.com/blog/wp-content/themes/fantasia/images/favicon.ico" rel="icon" type="image/x-icon" />
-<script src="https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit" async defer></script>
 
-    <script>
-      var recaptcha1;
-      var recaptcha2;
-      var myCallBack = function() {
-
-        recaptcha1 = grecaptcha.render('recaptcha1', {
-          'sitekey' : '6Lf10SIUAAAAAJDRHJSnwBs1a49Lf10U2wyV4A1i', //Reemplazar esto por la Key de tu sitio
-          'theme' : 'light',
-          
-        });
+      <div id="organizar">
         
-        recaptcha2 = grecaptcha.render('recaptcha2', {
-          'sitekey' : '6Lf_0CIUAAAAAPWAtw5R7R6j3xOc-nWW2hlYN5Qi',  //Reemplazar esto por la Key de tu sitio
-          'theme' : 'dark'
-        });
-      };
-    </script>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-<script type="text/javascript" src="js/enlargeit.js"></script>
-      <script type="text/javascript">
-        enl_ani = 0;
-        enl_brdsize = 24;
-        enl_shadow = 0;
-        enl_center = 0;
-        enl_dark = 0;
-        enl_darkprct = 20;
-        enl_drgdrop = 0;
-        enl_keynav = 1;
-        enl_wheelnav = 0;
-        enl_titlebar=0;
-      </script>
-
-
-      <style type="text/css">
-<!--
-.Estilo8 {font-size: 16px}
-.Estilo9 {font-size: 14px}
--->
-      </style>
-            <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="jquery.form.js"></script>
-
-<script type="text/javascript">
-	$(document).ready(function(){
-		$('#emailForm').ajaxForm({
-			beforeSubmit: validate,
-			success: function(data, statusText, xhr, form) {
-				$('#loading').html('El email se envio correctamente');
-				alert("El email se envio correctamente");
-				$('#loading').hide();
-				$("#nombre1").val("");
-				$("#profesion").val("");
-				$("#celular1").val("");
-				$("#email1").val("");
-				$("#adjunto").val("");
-			}
-		});
-		
-		function validate(formData, jqForm, options) {
-			var form = jqForm[0]; 
-			if(form.nombre.value == ""){
-				alert("Ingrese el asunto");
-				form.nombre.focus();
-				return false;
-			}else if(form.email.value == ""){
-				alert("Ingrese el email del destinatario");
-				form.email.focus();
-				return false;
-			}else if(form.celular.value == ""){
-				alert("Ingrese su mensaje");
-				form.celular.focus();
-				return false;
-			}
-			$('#loading').html('Enviando...').show();
-		}
-	});
-	
-</script>
-  </head>
-<body oncontextmenu="return false" onkeydown="return true">
-<div id='menuLogo'>
- <img class="img-rounded img-responsive" data-src="holder.js/900x500/auto" alt="900x500" src="imagenes\aqualim.jpg">
- </div>
-<div class="container" >
-  
-<a class="toggleMenu" href="#" style="display: none">Menu</a>
-<ul class="nav">
-  <li  class="test">
-  <li ><a href=""><span> </span></a></li>
-   <li ><a href="index.html"><span>Inicio</span></a></li>
-    <li ><a href="nosotros.html"><span class='down'>Nosotros</span></a></li>
-    <li ><a  href="politicas.html"><span class='down'>Políticas</span></a>    </li>
-
-
-    <li ><a href="servicios.html"><span class='down'>Servicios</span></a></li>
-  
-    <li class='top'><a class='top_link' href="aquatienda.html"><span class='down'>Aquatienda</span></a></li>
-     <li class='top'><a class='top_link' href="correo.html"><span class='down'>Contáctenos</span></a></li>
-    <li class='top'><a class='top_link' href="califiquenos.html"><span class='down'>Calífiquenos</span></a></li>
-   <li class='top'><a class='top_link' href="galeria.html"><span class='down'>Galería</span></a></li>
-  </li>
-  </ul>
-  </div>
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-
-<div id="organizar">
-<link rel="stylesheet" type="text/css" href="engine1/style.css" />
-  <script type="text/javascript" src="engine1/jquery.js"></script>
-<div id="wowslider-container1">
-  <div class="ws_images"><ul>
-      <li><img src="data1/images/reogiendo_la_monta.jpg" alt="" title="" id="wows1_0"/></li>
-    <li><img src="data1/images/DSC_0133.jpg" alt="" title="" id="wows1_1"/></li>
-    <li><a href="http://wowslider.com/vi"><img src="data1/images/oasis2.jpg" alt="bootstrap slider" title="" id="wows1_2"/></a></li>
-    <li><img src="data1/images/MuestreoSuelos.jpg" alt="" title="" id="wows1_3"/></li>
-     <li><img src="data1/images/garcero.jpg" alt="" title="" id="wows1_4"/></li>
-    <li><img src="data1/images/DSC_0131.jpg" alt="" title="" id="wows1_5"/></li>
-  </ul></div>
-  <div class="ws_bullets"><div>
-    <a href="#" title=""><span><img src="data1/tooltips/reogiendo_la_monta.jpg" alt=""/>1</span></a>
-    <a href="#" title=""><span><img src="data1/tooltips/DSC_0133.jpg" alt=""/>2</span></a>
-    <a href="#" title=""><span><img src="data1/tooltips/oasis2.jpg" alt=""/>3</span></a>
-    <a href="#" title=""><span><img src="data1/tooltips/MuestreoSuelos.jpg" alt=""/>4</span></a>
-       <a href="#" title=""><span><img src="data1/tooltips/garcero.jpg" alt=""/>5</span></a>
-       <a href="#" title=""><span><img src="data1/tooltips/DSC_0131.jpg" alt=""/>6</span></a>
-  </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wordpress gallery plugin</a> by WOWSlider.com v7.8</div>
-  <div class="ws_shadow"></div>
-  </div>  
-  <script type="text/javascript" src="engine1/wowslider.js"></script>
-  <script type="text/javascript" src="engine1/script.js"></script>
-  <!-- End WOWSlider.com BODY section -->
-
-
-
-<div class="row featurette">
       
-        
-        <h2>Muestreo</h2>
-           <p align="justify">La recolección de las muestras depende de los procedimientos analíticos empleados y  los objetivos del estudio siguiendo los lineamientos del Standard métodos.</p>
 
-           <p align="justify" >El objetivo del muestreo es obtener una parte representativa del material bajo estudio (cuerpo de agua, efluente industrial, agua residual, etc.) para la cual se analizaran las variables fisicoquímicas y microbiológicos de interés. </p>
-
-
-<div class="module2">
-
-<div> <a href='#' style="margin-left: 50px;" onClick="if(this.parentNode.getElementsByTagName('div')[0].style.display != ''){this.parentNode.getElementsByTagName('div')[0].style.display = '';this.innerHTML = 'Muestreos Simples y Compuestos de Agua. Ocultar';}else{this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = 'Muestreos Simples y Compuestos de Agua.Ver más';}return false" type="button">Muestreos Simples y Compuestos de Agua. Ver más</a><div style="display: none;"><p align="justify" >Contamos con los recursos humanos, físicos y logísticos para llevar a cabo la recolección de muestras y mediciones de caudal. Variable acreditada por el IDEAM. </p><p align="justify">AQUALIM, realiza In Situ mediciones de Conductividad, Oxigeno Disuelto, pH, Temperatura, Cloro Residual. </p> 
-<ul> 
-<li type="circle"> Medición de Caudal Micro moliente</li> 
-<li type="circle"> Medición de Caudal Volumétrico </li> 
-<li type="circle"> Muestreos Simples y Compuestos</li> 
-<li type="circle"> Muestreo de Aguas subterráneas – Piezómetros</li> 
-<li type="circle"> Muestreo Aguas Potables</li> 
-<li type="circle"> Muestreo de Aguas residuales domesticas e industriales</li> 
-</ul> 
-<img class="img-rounded img-responsive" data-src="holder.js/900x500/auto" alt="900x500" src="imagenes\muestreo7.jpg">
-
-</div>
-
-
-
-<div><a href='#' style="margin-left: 50px;" onClick="if(this.parentNode.getElementsByTagName('div')[0].style.display != ''){this.parentNode.getElementsByTagName('div')[0].style.display = '';this.innerHTML = 'Muestreo de Alimentos. Ocultar';}else{this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = 'Muestreo de Alimentos. Ver más';}return false" type="button">Muestreo de Alimentos. Ver más</a>
-  <div style="display: none;"><p align="justify">La toma de la muestra es realizada por personal del laboratorio capacitado para tal actividad, que conoce las técnicas de muestreo y medidas de higiene personal. </p> 
-<ul> 
-<li type="circle"> Frotis de Superficies.</li> 
-<li type="circle">Control de ambientes, </li> 
-<li type="circle"> Frotis manipuladores, </li> 
-<li type="circle"> Muestras de alimentos sólidos, líquidos y productos terminados.</li> 
-</ul> 
-<img class="img-rounded img-responsive" data-src="holder.js/900x500/auto" alt="900x500" src="imagenes\muestreo1.jpg"></div>
-
-
-<div><a href='#' style="margin-left: 50px;" onClick="if(this.parentNode.getElementsByTagName('div')[0].style.display != ''){this.parentNode.getElementsByTagName('div')[0].style.display = '';this.innerHTML = 'Muestreo en Piezómetros. Ocultar';}else{this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = 'Muestreo en Piezómetros. Ver más';}return false" type="button">Muestreo en Piezómetros. Ver más</a><div style="display: none;"><p><p align="justify" >Realizamos recolección de muestras de aguas subterráneas, mediciones de parámetros In Situ, determinación del nivel freático. Variable Acreditada IDEAM. </p> 
-<img class="img-rounded img-responsive" data-src="holder.js/900x500/auto" alt="900x500" src="imagenes\muestreo3.jpg"> 
-
-
-</div>
-
-<div><a href='#' style="margin-left: 50px;" onClick="if(this.parentNode.getElementsByTagName('div')[0].style.display != ''){this.parentNode.getElementsByTagName('div')[0].style.display = '';this.innerHTML = 'Muestreo Hidrobiológico. Ocultar';}else{this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = 'Muestreo Hidrobiológico. Ver más';}return false" type="button">Muestreo Hidrobiológico. Ver más</a><div style="display: none;"><p align="justify">AQUALIM, ofrece un servicio completo a sus clientes, incluyendo en su portafolio de servicios la toma de muestras y análisis de las siguientes determinaciones hidrobiológicas. </p> 
-<ul> 
-<li type="circle">Fitoplancton..</li> 
-<li type="circle">Peces </li> 
-<li type="circle"> Perifition. </li> 
-<li type="circle"> Micrófitos.</li> 
-<li type="circle"> Zooplancton.</li> 
-</ul> 
-<img class="img-rounded img-responsive" data-src="holder.js/900x500/auto" alt="900x500" src="imagenes\muestreo2.jpg"> 
-
-</div>
-
-<div><a href='#' style="margin-left: 50px;" onClick="if(this.parentNode.getElementsByTagName('div')[0].style.display != ''){this.parentNode.getElementsByTagName('div')[0].style.display = '';this.innerHTML = 'Muestreo en Suelos. Ocultar';}else{this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = 'Muestreo en Suelos. Ver más';}return false" type="button">Muestreo en Suelos. Ver más</a><div style="display: none;"><p align="justify">AQUALIM, realiza la recolección de muestras de suelo para posterior análisis fisicoquímico en laboratorio.</p>
-<img class="img-rounded img-responsive" data-src="holder.js/900x500/auto" alt="900x500" src="imagenes\muestreo4.jpg"> </div>
-
-
-  </div>
+        <div id="wowslider-container1">
+          <div class="ws_images">
+            <ul>
+              <li><img src="../assets/slider/1.jpg" alt="" title="" id="wows1_0" /></li>
+              <li><img src="../assets/slider/2.jpg" alt="" title="" id="wows1_1" /></li>
+              <li><a href="http://wowslider.com/vi"><img src="../assets/slider/3.jpg" alt="bootstrap slider" title="" id="wows1_2" /></a></li>
+              <li><img src="../assets/slider/4.jpg" title="" id="wows1_3" /></li>
+              <li><img src="../assets/slider/5.jpg" alt="" title="" id="wows1_4" /></li>
+              <li><img src="../assets/slider/6.jpg" alt="" title="" id="wows1_5" /></li>
+            </ul>
+          </div>
+          <div class="ws_bullets">
+            <div>
+              <a href="#" title=""><span><img src="../assets/images/reogiendo_la_monta.jpg" alt="" />1</span></a>
+              <a href="#" title=""><span><img src="../assets/images/DSC_0133.jpg" alt="" />2</span></a>
+              <a href="#" title=""><span><img src="../assets/images/oasis2.jpg" alt="" />3</span></a>
+              <a href="#" title=""><span><img src="../assets/images/MuestreoSuelos.JPG" alt="" />4</span></a>
+              <a href="#" title=""><span><img src="../assets/images/garcero.jpg" alt="" />5</span></a>
+              <a href="#" title=""><span><img src="../assets/images/DSC_0131.JPG" alt="" />6</span></a>
+            </div>
+          </div>
+          <div class="ws_shadow"></div>
+        </div>
        
-  
-<div class="containerFlechas ">
+        <!-- End WOWSlider.com BODY section -->
 
-                
-<a class='top_link' href="servicios.html" ><img class="previous" data-src="holder.js/10x10/auto" alt="10x10" src="imagenes/flechaAt.jpg" style="position: absolute; top: 0; left: 0;" /></a>
 
-<a class='top_link' href="analisisF.html" ><img class="next" data-src="holder.js/10x10/auto" alt="10x10" src="imagenes/flechaD.png"  style="position: absolute; top: 0; right:0;" ></a>
-                 
-                 
-                 
+
+        <div class="row featurette">
+
+
+          <h2>Muestreo</h2>
+          <p align="justify">La recolección de las muestras depende de los procedimientos analíticos empleados y los
+            objetivos del estudio siguiendo los lineamientos del Standard métodos.</p>
+
+          <p align="justify">El objetivo del muestreo es obtener una parte representativa del material bajo estudio
+            (cuerpo de agua, efluente industrial, agua residual, etc.) para la cual se analizaran las variables
+            fisicoquímicas y microbiológicos de interés. </p>
+
+
+          <div class="module2">
+
+            <div> <a href='#' style="margin-left: 50px;"
+                onClick="if(this.parentNode.getElementsByTagName('div')[0].style.display != ''){this.parentNode.getElementsByTagName('div')[0].style.display = '';this.innerHTML = 'Muestreos Simples y Compuestos de Agua. Ocultar';}else{this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = 'Muestreos Simples y Compuestos de Agua.Ver más';}return false"
+                type="button">Muestreos Simples y Compuestos de Agua. Ver más</a>
+              <div style="display: none;">
+                <p align="justify">Contamos con los recursos humanos, físicos y logísticos para llevar a cabo la
+                  recolección de muestras y mediciones de caudal. Variable acreditada por el IDEAM. </p>
+                <p align="justify">AQUALIM, realiza In Situ mediciones de Conductividad, Oxigeno Disuelto, pH,
+                  Temperatura, Cloro Residual. </p>
+                <ul>
+                  <li type="circle"> Medición de Caudal Micro moliente</li>
+                  <li type="circle"> Medición de Caudal Volumétrico </li>
+                  <li type="circle"> Muestreos Simples y Compuestos</li>
+                  <li type="circle"> Muestreo de Aguas subterráneas – Piezómetros</li>
+                  <li type="circle"> Muestreo Aguas Potables</li>
+                  <li type="circle"> Muestreo de Aguas residuales domesticas e industriales</li>
+                </ul>
+                <img class="img-rounded img-responsive" data-src="holder.js/900x500/auto" alt="900x500"
+                  src="../assets/images/muestreo7.jpg">
+
+              </div>
+
+
+
+              <div><a href='#' style="margin-left: 50px;"
+                  onClick="if(this.parentNode.getElementsByTagName('div')[0].style.display != ''){this.parentNode.getElementsByTagName('div')[0].style.display = '';this.innerHTML = 'Muestreo de Alimentos. Ocultar';}else{this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = 'Muestreo de Alimentos. Ver más';}return false"
+                  type="button">Muestreo de Alimentos. Ver más</a>
+                <div style="display: none;">
+                  <p align="justify">La toma de la muestra es realizada por personal del laboratorio capacitado para tal
+                    actividad, que conoce las técnicas de muestreo y medidas de higiene personal. </p>
+                  <ul>
+                    <li type="circle"> Frotis de Superficies.</li>
+                    <li type="circle">Control de ambientes, </li>
+                    <li type="circle"> Frotis manipuladores, </li>
+                    <li type="circle"> Muestras de alimentos sólidos, líquidos y productos terminados.</li>
+                  </ul>
+                  <img class="img-rounded img-responsive" data-src="holder.js/900x500/auto" alt="900x500"
+                    src="../assets/images/muestreo1.jpg">
                 </div>
-</div>
+
+
+                <div><a href='#' style="margin-left: 50px;"
+                    onClick="if(this.parentNode.getElementsByTagName('div')[0].style.display != ''){this.parentNode.getElementsByTagName('div')[0].style.display = '';this.innerHTML = 'Muestreo en Piezómetros. Ocultar';}else{this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = 'Muestreo en Piezómetros. Ver más';}return false"
+                    type="button">Muestreo en Piezómetros. Ver más</a>
+                  <div style="display: none;">
+                    <p>
+                    <p align="justify">Realizamos recolección de muestras de aguas subterráneas, mediciones de
+                      parámetros In Situ, determinación del nivel freático. Variable Acreditada IDEAM. </p>
+                    <img class="img-rounded img-responsive" data-src="holder.js/900x500/auto" alt="900x500"
+                      src="../assets/images/muestreo3.jpg">
+
+
+                  </div>
+
+                  <div><a href='#' style="margin-left: 50px;"
+                      onClick="if(this.parentNode.getElementsByTagName('div')[0].style.display != ''){this.parentNode.getElementsByTagName('div')[0].style.display = '';this.innerHTML = 'Muestreo Hidrobiológico. Ocultar';}else{this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = 'Muestreo Hidrobiológico. Ver más';}return false"
+                      type="button">Muestreo Hidrobiológico. Ver más</a>
+                    <div style="display: none;">
+                      <p align="justify">AQUALIM, ofrece un servicio completo a sus clientes, incluyendo en su
+                        portafolio de servicios la toma de muestras y análisis de las siguientes determinaciones
+                        hidrobiológicas. </p>
+                      <ul>
+                        <li type="circle">Fitoplancton..</li>
+                        <li type="circle">Peces </li>
+                        <li type="circle"> Perifition. </li>
+                        <li type="circle"> Micrófitos.</li>
+                        <li type="circle"> Zooplancton.</li>
+                      </ul>
+                      <img class="img-rounded img-responsive" data-src="holder.js/900x500/auto" alt="900x500"
+                        src="../assets/images/muestreo2.jpg">
+
+                    </div>
+
+                    <div><a href='#' style="margin-left: 50px;"
+                        onClick="if(this.parentNode.getElementsByTagName('div')[0].style.display != ''){this.parentNode.getElementsByTagName('div')[0].style.display = '';this.innerHTML = 'Muestreo en Suelos. Ocultar';}else{this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = 'Muestreo en Suelos. Ver más';}return false"
+                        type="button">Muestreo en Suelos. Ver más</a>
+                      <div style="display: none;">
+                        <p align="justify">AQUALIM, realiza la recolección de muestras de suelo para posterior análisis
+                          fisicoquímico en laboratorio.</p>
+                        <img class="img-rounded img-responsive" data-src="holder.js/900x500/auto" alt="900x500"
+                          src="../assets/images/muestreo4.jpg">
+                      </div>
+
+
+                    </div>
+
+
+                    <div class="containerFlechas ">
+
+
+                      <a class='top_link' href="servicios.html"><img class="previous" data-src="holder.js/10x10/auto"
+                          alt="10x10" src="../assets/icons/flechaAt.jpg" style="position: absolute; top: 0; left: 0;" /></a>
+
+                      <a class='top_link' href="analisisF.html"><img class="next" data-src="holder.js/10x10/auto"
+                          alt="10x10" src="../assets/icons/flechaD.png" style="position: absolute; top: 0; right:0;"></a>
+
+
+
+                    </div>
+                  </div>
 
 
 
 
 
 
-    <footer>
-     <div id="pie">
-             <footer class="footer-distributed">
-
-     
-
-      <div class="footer-center">
+                  <footer>
+                    <div id="pie">
+                      <footer class="footer-distributed">
 
 
-        <div>
-         <i class="glyphicon glyphicon-home"></i>
-           <p><a href="correo.html" ><span>Contáctenos </span></a></p>
-           </div>
-        <div>
-  
 
-          <i class="glyphicon glyphicon-envelope"></i>
-
-         
-           <a href="#Cotice">Cotice aqui</a>
-
-<div id="Cotice" class="modalDialog">
-<div>
-       <a href="#close" title="Close" class="close"></a>
-
-            <h2>Cotizaciones</h2>
-          
-
-          
-            <form action="cotizacion.php" method="post" target="_self" >
-             <div>
-              <p></p>
-                <label for="nit">Nombre:</label>
-                 <input type="text" name="nombre"   required placeholder="" >
-               
-            </div>
-            <div>
-              <p></p>
-                <label for="nit">Identificación</label>
-                  <input type="text" name="nit" pattern="^@?(\w){1,15}$" title="Por favor agregue cedula o nit  "  required placeholder="Cedula o Nit" >
-                
-            </div>
-            
-            <div>
-                <label for="telefono">Teléfono</label>
-                   <input type="text" name="telefono" pattern="^@?(\w){1,15}$" title="Por favor agregue un numero de telefono o celular  "  required>
-               
-            </div>
-            <div>
-
-                <label for="email">Correo Electrónico</label>
-                <input type="text" name="email" required>
-                
-            </div>
-             <div>
-
-                <label for="descripcion">Descripción</label>
-                 <textarea class="messageInput" title="Message" name="descripcion" placeholder="Describa aquí el servicio que requiere solicitar. Ejemplo: Realizar la toma de 2 muestras de agua tratada, realizando análisis fisicoquímicos y microbiológicos según resolución 2115 de 2007." ></textarea>
-                    <!--div class="g-recaptcha" data-sitekey="6Lf10SIUAAAAAJDRHJSnwBs1a49Lf10U2wyV4A1i"></div-->
-            </div>
-           
-            <div id="recaptcha1" ></div>
-           <button class="submit" type="submit">Enviar</button>
-            
-            
-            </form>
-        
-          
-       </div>
-        
-        </div>
-        </div>
-        <div>
-          <i class="glyphicon glyphicon-user"></i>
-            <a href="#Trabajo">Trabaje con Nosotros</a>
-
-<div id="Trabajo" class="modalDialog">
-        <div>
-       <a href="#close" title="Close" class="close"></a>
-            <h2>Trabaje con Nosotros</h2>
-            <label>
-            <div align="justify">Buscamos nuevos talentos que trabajen en equipo hacia el logro de las metas organizacionales, cumpliendo con los compromisos acordados y participando activamente. Que tengan criterio propositivo, disciplina y la capacidad de compartir conocimientos e información para aprender y crecer profesional y personalmente.</div>
-            </label>
-            <label> 
-            <div align="justify">Toda información registrada en la hoja de vida será validada por la empresa mediante la solicitud de los soportes respectivos.</div>
-            </label>
-
-           <form action="postulacion.php" method="post" enctype="multipart/form-data" target="_self" >
-           <p></p>
-            <div>
-            <label for="nombre1"><br>
-                Nombre y Apellido</label>
-                <input name="nombre1" type="text" required>
-                
-               
-            </div>
-    
-            <div>
-            <label for="profesion"><br>
-               Profesión</label>
-               <input type="text" name="profesion"  placeholder="Técnico, Tecnólogo o Profesional">  
-               
-            </div>
-          
-            <div>
-                <label for="celular1">Numero de celular</label>
-                <input type="text" name="celular1"   required>
-               
-            </div>
-             <div>
-                <label for="email1">Correo Electronico</label>
-                <input type="text" name="email1"   required>
-                
-            </div>
-              
-           
-        <label for="adjunto">Anexe su hoja de vida</label>
-        <div class="drag-drop">
-             <input type="file" name="adjunto" pattern="^@?(\w){1,15}$" title="Por favor agregue un archivo en pdf  "   required>
-            
-            <span class="fa-stack fa-2x">
-                <i class="fa fa-cloud fa-stack-2x bottom pulsating"></i>
-                <i class="fa fa-circle fa-stack-1x top medium"></i>
-                <i class="fa fa-arrow-circle-up fa-stack-1x top"></i>
-            </span>
-            <span class="desc">Pulse aquí para añadir archivos</span>
-               
-        </div>
-         <div id="recaptcha2"></div>
-       
-             <button class="submit" type="submit" name="subir">Enviar</button>
-                
-           </form>
-        
-        </div>
-       
-      
-        </div>
-        
-</div>
-      </div>
-
-      <div class="footer-right">
-
-       
-         <h3>Información Aqualim </h3>
-      
-            <p>Carrera 23 N° 19-15 Yopal- Casanare </p>
-            <p>Horario de atencion Lunes a Viernes 8 -12 a.m. y 2-5 p.m.  Sabado  8 -12 a.m.</p>
-            <p> Tel (098) 6324402 / 6359090  </p>
-           <p>Cel 3103490629 / 3203017075</p>
-             <div>
-      
-       
-     
+                        <div class="footer-center">
 
 
-          <ul id="m-soc">
-<li><a class="twitter" href="https://twitter.com/aqualimlab"><span>Seguir en Twitter</span></a></li><li><a class="facebook" href="https://www.facebook.com/pages/LABORATORIO-AMBIENTAL-AQUALIM/125018642072?fref=ts"><span>Facebook</span></a></li></ul>
-        
+                          <div>
+                            <i class="glyphicon glyphicon-home"></i>
+                            <p><a href="correo.html"><span>Contáctenos </span></a></p>
+                          </div>
+                          <div>
 
-     
 
-      </div>
-    
-        </div><!-- end post footer -->
-       
-     
-           
+                            <i class="glyphicon glyphicon-envelope"></i>
 
-    </footer>
-     <div class="post-footer-wrap">
-            <div class="fl">
-            <p >Todos los derechos reservados por AQUALIM-Laboratorio Ambiental </div>
-           
-            </div>
-     </div>
 
-   <script type="text/javascript"> 
-  
-    
-$(document).ready(function(){ <!-- --------> ejecuta el script jquery cuando el documento ha terminado de cargarse -->
-  $("#b1").click(function() { <!-- ------> al pulsar (.click) el boton 1 (#b1) -->
-    $("#dialogo").dialog({ <!--  ------> muestra la ventana  -->
-      width: 590,  <!-- -------------> ancho de la ventana -->
-      height: 350,<!--  -------------> altura de la ventana -->
-      show: "scale", <!-- -----------> animación de la ventana al aparecer -->
-      hide: "scale", <!-- -----------> animación al cerrar la ventana -->
-      resizable: "false", <!-- ------> fija o redimensionable si ponemos este valor a "true" -->
-      position: "center",<!--  ------> posicion de la ventana en la pantalla (left, top, right...) -->
-      modal: "true" <!-- ------------> si esta en true bloquea el contenido de la web mientras la ventana esta activa (muy elegante) -->
-    });
-  });
-  </script>
-</body>
+                            <a href="#Cotice">Cotice aqui</a>
 
-</html>
-</content>
+                            <div id="Cotice" class="modalDialog">
+                              <div>
+                                <a href="#close" title="Close" class="close"></a>
+
+                                <h2>Cotizaciones</h2>
+
+
+
+                                <form action="cotizacion.php" method="post" target="_self">
+                                  <div>
+                                    <p></p>
+                                    <label for="nit">Nombre:</label>
+                                    <input type="text" name="nombre" required placeholder="">
+
+                                  </div>
+                                  <div>
+                                    <p></p>
+                                    <label for="nit">Identificación</label>
+                                    <input type="text" name="nit" pattern="^@?(\w){1,15}$"
+                                      title="Por favor agregue cedula o nit  " required placeholder="Cedula o Nit">
+
+                                  </div>
+
+                                  <div>
+                                    <label for="telefono">Teléfono</label>
+                                    <input type="text" name="telefono" pattern="^@?(\w){1,15}$"
+                                      title="Por favor agregue un numero de telefono o celular  " required>
+
+                                  </div>
+                                  <div>
+
+                                    <label for="email">Correo Electrónico</label>
+                                    <input type="text" name="email" required>
+
+                                  </div>
+                                  <div>
+
+                                    <label for="descripcion">Descripción</label>
+                                    <textarea class="messageInput" title="Message" name="descripcion"
+                                      placeholder="Describa aquí el servicio que requiere solicitar. Ejemplo: Realizar la toma de 2 muestras de agua tratada, realizando análisis fisicoquímicos y microbiológicos según resolución 2115 de 2007."></textarea>
+                                    <!--div class="g-recaptcha" data-sitekey="6Lf10SIUAAAAAJDRHJSnwBs1a49Lf10U2wyV4A1i"></div-->
+                                  </div>
+
+                                  <div id="recaptcha1"></div>
+                                  <button class="submit" type="submit">Enviar</button>
+
+
+                                </form>
+
+
+                              </div>
+
+                            </div>
+                          </div>
+                          <div>
+                            <i class="glyphicon glyphicon-user"></i>
+                            <a href="#Trabajo">Trabaje con Nosotros</a>
+
+                            <div id="Trabajo" class="modalDialog">
+                              <div>
+                                <a href="#close" title="Close" class="close"></a>
+                                <h2>Trabaje con Nosotros</h2>
+                                <label>
+                                  <div align="justify">Buscamos nuevos talentos que trabajen en equipo hacia el logro de
+                                    las metas organizacionales, cumpliendo con los compromisos acordados y participando
+                                    activamente. Que tengan criterio propositivo, disciplina y la capacidad de compartir
+                                    conocimientos e información para aprender y crecer profesional y personalmente.
+                                  </div>
+                                </label>
+                                <label>
+                                  <div align="justify">Toda información registrada en la hoja de vida será validada por
+                                    la empresa mediante la solicitud de los soportes respectivos.</div>
+                                </label>
+
+                                <form action="postulacion.php" method="post" enctype="multipart/form-data"
+                                  target="_self">
+                                  <p></p>
+                                  <div>
+                                    <label for="nombre1"><br>
+                                      Nombre y Apellido</label>
+                                    <input name="nombre1" type="text" required>
+
+
+                                  </div>
+
+                                  <div>
+                                    <label for="profesion"><br>
+                                      Profesión</label>
+                                    <input type="text" name="profesion" placeholder="Técnico, Tecnólogo o Profesional">
+
+                                  </div>
+
+                                  <div>
+                                    <label for="celular1">Numero de celular</label>
+                                    <input type="text" name="celular1" required>
+
+                                  </div>
+                                  <div>
+                                    <label for="email1">Correo Electronico</label>
+                                    <input type="text" name="email1" required>
+
+                                  </div>
+
+
+                                  <label for="adjunto">Anexe su hoja de vida</label>
+                                  <div class="drag-drop">
+                                    <input type="file" name="adjunto" pattern="^@?(\w){1,15}$"
+                                      title="Por favor agregue un archivo en pdf  " required>
+
+                                    <span class="fa-stack fa-2x">
+                                      <i class="fa fa-cloud fa-stack-2x bottom pulsating"></i>
+                                      <i class="fa fa-circle fa-stack-1x top medium"></i>
+                                      <i class="fa fa-arrow-circle-up fa-stack-1x top"></i>
+                                    </span>
+                                    <span class="desc">Pulse aquí para añadir archivos</span>
+
+                                  </div>
+                                  <div id="recaptcha2"></div>
+
+                                  <button class="submit" type="submit" name="subir">Enviar</button>
+
+                                </form>
+
+                              </div>
+
+
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <div class="footer-right">
+
+
+                          <h3>Información Aqualim </h3>
+
+                          <p>Carrera 23 N° 19-15 Yopal- Casanare </p>
+                          <p>Horario de atencion Lunes a Viernes 8 -12 a.m. y 2-5 p.m. Sabado 8 -12 a.m.</p>
+                          <p> Tel (098) 6324402 / 6359090 </p>
+                          <p>Cel 3103490629 / 3203017075</p>
+                          <div>
+
+
+
+
+
+                            <ul id="m-soc">
+                              <li><a class="twitter" href="https://twitter.com/aqualimlab"><span>Seguir en
+                                    Twitter</span></a></li>
+                              <li><a class="facebook"
+                                  href="https://www.facebook.com/pages/LABORATORIO-AMBIENTAL-AQUALIM/125018642072?fref=ts"><span>Facebook</span></a>
+                              </li>
+                            </ul>
+
+
+
+
+                          </div>
+
+                        </div><!-- end post footer -->
+
+
+
+
+                      </footer>
+                      <div class="post-footer-wrap">
+                        <div class="fl">
+                          <p>Todos los derechos reservados por AQUALIM-Laboratorio Ambiental
+                        </div>
+
+                      </div>
+                    </div>
+                    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+                    <script type="text/javascript" src="../js/script.js"></script>
+                    <script type="text/javascript" src="../engine1/wowslider.js"></script>
+                    <script type="text/javascript" src="../engine1/script.js"></script>
+                    <script type="text/javascript" src="../engine1/jquery.js"></script>
+
+    </body>
+
+    </html>
+  </content>
 </snippet>
-    <!-- Insert to your webpage before the </head> -->
-   
+<!-- Insert to your webpage before the </head> -->
