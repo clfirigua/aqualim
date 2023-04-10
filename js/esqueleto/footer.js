@@ -141,7 +141,7 @@ $(footer).append( `<footer class="footer-distributed">
     <ul id="m-soc">
       <li><a class="twitter" href="https://twitter.com/aqualimlab"><span>Seguir en Twitter</span></a></li>
       <li><a class="facebook"
-          href="https://www.facebook.com/Aqualimlabambiental"><span>Facebook</span></a>
+          href="https://www.facebook.com/Aqualimlab/"><span>Facebook</span></a>
       </li>
     </ul>
   </div>
