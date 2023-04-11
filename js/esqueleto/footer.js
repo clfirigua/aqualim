@@ -139,9 +139,9 @@ $(footer).append( `<footer class="footer-distributed">
   <p>Cel 3142296223 / 3103490629</p>
   <div>
     <ul id="m-soc">
-      <li><a class="twitter" href="https://twitter.com/aqualimlab"><span>Seguir en Twitter</span></a></li>
+      <li><a class="twitter" href="https://twitter.com/aqualimlab" target="_blank" rel="noopener noreferrer"><span>Seguir en Twitter</span></a></li>
       <li><a class="facebook"
-          href="https://www.facebook.com/Aqualimlab/"><span>Facebook</span></a>
+          href="https://www.facebook.com/Aqualimlab/" target="_blank" rel="noopener noreferrer"><span>Facebook</span></a>
       </li>
     </ul>
   </div>
