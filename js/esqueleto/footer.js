@@ -7,13 +7,15 @@ $(footer).append( `<footer class="footer-distributed">
 
 
   <div>
-    <i class="glyphicon glyphicon-home"></i>
+
+    <i class="glyphicon bi bi-house"></i>
     <p><a href="correo.html"><span>Contáctenos </span></a></p>
   </div>
   <div>
 
 
     <i class="glyphicon glyphicon-envelope"></i>
+
 
 
     <a href="#Cotice">Cotice aqui</a>
@@ -61,7 +63,7 @@ $(footer).append( `<footer class="footer-distributed">
     </div>
   </div>
   <div>
-    <i class="glyphicon glyphicon-user"></i>
+  <i class="glyphicon bi bi-person-fill"></i>
     <a href="#Trabajo">Trabaje con Nosotros</a>
 
     <div id="Trabajo" class="modalDialog">
