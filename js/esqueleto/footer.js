@@ -1,5 +1,5 @@
 const footer = document.getElementById('pie')
-$(footer).append( `<footer class="footer-distributed">
+$(footer).append(`<footer class="footer-distributed">
   
   
   
@@ -9,7 +9,7 @@ $(footer).append( `<footer class="footer-distributed">
   <div>
 
     <i class="glyphicon bi bi-house"></i>
-    <p><a href="correo.html"><span>Contáctenos </span></a></p>
+    <p><a href="../../pages/correo.html"><span>Contáctenos </span></a></p>
   </div>
   <div>
 
@@ -23,7 +23,7 @@ $(footer).append( `<footer class="footer-distributed">
       <div>
         <a href="#close" title="Close" class="close"></a>
         <h2>Cotizaciones</h2>
-        <form action="cotizacion.php" method="post" target="_self">
+        <form  target="_self">
           <div>
             <p></p>
             <label for="nit">Nombre:</label>
@@ -53,7 +53,7 @@ $(footer).append( `<footer class="footer-distributed">
           </div>
           <div id="recaptcha1">
           </div>
-          <button class="submit" type="buttom">Enviar</button>
+          <button id="btn-cotizacion" class="submit" type="buttom">Enviar</button>
 
         </form>
 
@@ -109,23 +109,7 @@ $(footer).append( `<footer class="footer-distributed">
 
           </div>
 
-
-          <label for="adjunto">Anexe su hoja de vida</label>
-          <div class="drag-drop">
-            <input type="file" name="adjunto" pattern="^@?(\w){1,15}$"
-              title="Por favor agregue un archivo en pdf  " required>
-
-            <span class="fa-stack fa-2x">
-              <i class="fa fa-cloud fa-stack-2x bottom pulsating"></i>
-              <i class="fa fa-circle fa-stack-1x top medium"></i>
-              <i class="fa fa-arrow-circle-up fa-stack-1x top"></i>
-            </span>
-            <span class="desc">Pulse aquí para añadir archivos</span>
-
-          </div>
-          <div id="recaptcha2"></div>
-
-          <button class="submit" type="submit" name="subir">Enviar</button>
+          <button id="btn-trabajo" class="submit" type="submit" name="subir">Enviar</button>
 
         </form>
 
@@ -155,3 +139,53 @@ $(footer).append( `<footer class="footer-distributed">
 </div>
 
 </div>`);
+
+
+const btnCotizacion = document.getElementById('btn-cotizacion');
+const btnTrabajo = document.getElementById('btn-trabajo');
+
+
+
+btnCotizacion.addEventListener('click', (event) => {
+  event.preventDefault();
+  const form = btnCotizacion.parentElement;
+  const nombre = form.querySelectorAll('[name="nombre"]');
+  const nit = form.querySelectorAll('[name="nit"]');
+  const telefono = form.querySelectorAll('[name="telefono"]');
+  const email = form.querySelectorAll('[name="email"]');
+  const descripcion = form.querySelectorAll('[name="descripcion"]');
+  console.log(nombre.value, nit.value, telefono.value, email.value, descripcion.value)
+  const mensaje = `Buen día mi nombre es : ${nombre[0].value}  me encuentro interesado en sus servicios  numero de contacto:${telefono[0].value}  nit:${nit[0].value}  mensaje: ${descripcion[0].value}`;
+  enviarEmail('cotizaciones@aqualim.com', mensaje, email[0].value);
+})
+btnTrabajo.addEventListener('click', (event) => {
+  event.preventDefault();
+  const form = btnTrabajo.parentElement;
+  const nombre1 = form.querySelectorAll('[name="nombre1"]');
+  const profesion = form.querySelectorAll('[name="profesion"]');
+  const celular1 = form.querySelectorAll('[name="celular1"]');
+  const email1 = form.querySelectorAll('[name="email1"]');
+  const mensaje = `Buen día mi nombre es : ${nombre1[0].value}  me gustaria formar parte de su equipo mi profecion es: ${profesion[0].value}  numero de telefono:${celular1[0].value}`
+  enviarEmail('vacantesaqualim@gmail.com', mensaje, email1[0].value);
+
+})
+
+
+const enviarEmail = async (para, mensaje, emailcontacto) => {
+  try {
+    const url = 'https://mensajes-aqualim.herokuapp.com/sendmailer/mensaje';
+
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ mensaje, para, emailcontacto })
+    });
+
+    const data = await response.json();
+    console.log('Respuesta:', data);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
