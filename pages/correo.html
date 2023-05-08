@@ -99,17 +99,14 @@
         <hr class="featurette-divider">
         <div class="autowide2">
 
+
           <div class="module2">
 
             <div id="GerenteAdministrativa" class="modalDialog">
               <div>
                 <a href="#close" title="Close" class="close"></a>
-
-
-
-
                 <h2>Enviando mensaje a Gerente Administrativa</h2>
-                <form action="GerenteAdministrativa.php" method="post" target="_self">
+                <form target="_self">
                   <div>
                     <p></p>
                     <label for="nombre">
@@ -117,44 +114,30 @@
                     </label>
                     <input class="nameInput" type="text" name="nombre" required placeholder="">
                   </div>
-
                   <div>
-
                     <label for="correo">
                       <div>Correo Electrónico</div>
                     </label>
                     <input class="nameInput" type="text" name="correo">
-
                   </div>
                   <div>
-
                     <label for="descipcion">
                       <div>Descripción</div>
                     </label>
                     <textarea class="messageInput" title="Message" name="descipcion" placeholder=""></textarea>
                   </div>
                   <div id="recaptcha3"></div>
-                  <button class="submit" type="submit">Enviar</button>
-
-
+                  <button data-email="gerencia@aqualim.com" id="btn-1" class="submit">Enviar</button>
                 </form>
               </div>
-
-
             </div>
           </div>
         </div>
-
         <div class="module2">
           <div>
-
             <div id="DirectoraCalidad" class="modalDialog">
               <div>
                 <a href="#close" title="Close" class="close"></a>
-
-
-
-
                 <h2>Enviando mensaje a Director de Calidad</h2>
                 <form action="DirectoraCalidad.php" method="post" target="_self">
                   <div>
@@ -181,17 +164,15 @@
                     <textarea class="messageInput" title="Message" name="descipcion" placeholder=""></textarea>
                   </div>
                   <div id="recaptcha4"></div>
-                  <button class="submit" type="submit">Enviar</button>
+                  <button data-email="servicioalcliente@aqualim.com	" id="btn-2" class="submit"
+                    type="submit">Enviar</button>
 
 
                 </form>
               </div>
-
-
             </div>
           </div>
         </div>
-
         <div class="module2">
           <div>
 
@@ -230,7 +211,7 @@
                   </div>
 
                   <div id="recaptcha5"></div>
-                  <button class="submit" type="submit">Enviar</button>
+                  <button data-email="contabilidad@aqualim.com	" id="btn-3" class="submit" type="submit">Enviar</button>
 
 
                 </form>
@@ -275,7 +256,7 @@
                     <textarea class="messageInput" title="Message" name="descipcion" placeholder=""></textarea>
                   </div>
                   <div id="recaptcha6"></div>
-                  <button class="submit" type="submit">Enviar</button>
+                  <button data-email="contabilidad@aqualim.com" id="btn-4" class="submit" type="submit">Enviar</button>
 
 
                 </form>
@@ -324,7 +305,7 @@
                   </div>
 
                   <div id="recaptcha7"></div>
-                  <button class="submit" type="submit">Enviar</button>
+                  <button data-email="cotizaciones@aqualim.com	" id="btn-5" class="submit" type="submit">Enviar</button>
 
 
                 </form>
@@ -371,7 +352,7 @@
                   </div>
 
                   <div id="recaptcha8"></div>
-                  <button class="submit" type="submit">Enviar</button>
+                  <button data-email="resultados@aqualim.com	" id="btn-6" class="submit" type="submit">Enviar</button>
 
 
                 </form>
@@ -421,7 +402,8 @@
                   </div>
 
                   <div id="recaptcha9"></div>
-                  <button class="submit" type="submit">Enviar</button>
+                  <button data-email="coordinadordereportes@aqualim.com" id="btn-7" class="submit"
+                    type="submit">Enviar</button>
 
 
                 </form>
@@ -449,6 +431,7 @@
       <script type="text/javascript" src="../engine1/script.js"></script>
       <script src="../js/esqueleto/menu.js"></script>
       <script src="../js/esqueleto/footer.js"></script>
+      <script src="../js/esqueleto/envioEmail.js"></script>
     </body>
 
     </html>
