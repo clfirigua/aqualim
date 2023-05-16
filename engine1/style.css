@@ -428,3 +428,10 @@ p, .font-text {
 .mt-5{
 	margin-top: 1rem;
 }
+
+.Estilo3{
+	text-align: justify;
+}
+.bolded {
+	font-weight: bold; 
+}

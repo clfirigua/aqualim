@@ -23,8 +23,8 @@ $(menu).append(
     </div>`
 )
 $(texto).append(`
-                Laboratorio ambiental acreditado por el IDEAM bajo la norma ISO 17025: 17 “Requisitos
-                técnicos para la competencia de los laboratorios de ensayo y de calibración”; cuenta con más
-                de `,anios, ` años de experiencia en la realización de toma de muestras simples y compuestas,
+                Laboratorio ambiental acreditado por el IDEAM bajo la norma NTC - ISO/IEC 17025:2017 “Requisitos
+                técnicos para la competencia de los laboratorios de ensayo y de calibración” cuenta con más
+                de  <strong> ${anios} años de experiencia </strong> en la realización de toma de muestras simples y compuestas,
                 análisis fisicoquímicos y microbiológicos de aguas, suelos, hidrobiología y alimentos.
 `)
