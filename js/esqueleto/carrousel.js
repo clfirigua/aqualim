@@ -1,5 +1,5 @@
 const carrousel = document.getElementById('carrousel')
-
+    console.log(carrousel);
 $(carrousel).append(`
 <div id="wowslider-container1">
             <div class="ws_images">
