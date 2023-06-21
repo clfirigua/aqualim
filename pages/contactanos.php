@@ -51,19 +51,21 @@
               </ul>
             </div>
             <div class="form">
-              <p>Dejanos un mensaje</p>
-              <input type="text" placeholder="Nombre completo">
+              <p >Dejanos un mensaje <span class="requiere">*</span></p>
+              <input type="text" placeholder="Nombre completo *">
+              <input type="email" placeholder="Correo electronico *">
               <select>
-                <option selected>Seleccione una opcion</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option selected disabled>Seleccione una opcion de contacto</option>
+                <option value="gerencia@aqualim.com">Gerencia</option>
+                <option value="servicioalcliente@aqualim.com">Calidad</option>
+                <option value="contabilidad@aqualim.com">Contabilidad</option>
+                <option value="facturacion@aqualim.com">Facturacion</option>
+                <option value="cotizaciones@aqualim.com">Cotizaciones</option>
+                <option value="coordinaciondereportes@aqualim.com">Reportes</option>
               </select>
-              <textarea>
+              <textarea placeholder="Escribe tu mensaje aquí *"></textarea>
 
-              </textarea>
-
-              <button>Enviar</button>
+              <button onclick="enviarFormulario()">Enviar</button>
 
             </div>
           </div>
