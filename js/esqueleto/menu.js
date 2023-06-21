@@ -19,7 +19,7 @@ if (path != "/pages/correo1.html") {
 
             <li><a href="/"><span>Inicio</span></a></li>
             <li><a href="../pages/servicios.html"><span class='down'>Servicios</span></a></li>
-            <li class='top'><a class='top_link' href="../pages/contactanos.html"><span class='down'>Contáctenos </span></a></li>
+            <li class='top'><a class='top_link' href="../pages/contactanos.php"><span class='down'>Contáctenos </span></a></li>
             <li class='top'><a class='top_link' href="../pages/califiquenos.html"><span class='down'>Calífiquenos</span></a></li>
         </ul>
     </div>`
@@ -40,7 +40,7 @@ else {
         var pages = [
             { title: 'Inicio', link: '/' },
             { title: 'Servicios', link: '/pages/servicios.html' },
-            { title: 'Contáctenos', link: '/pages/contactanos.html' },
+            { title: 'Contáctenos', link: '/pages/contactanos.php' },
             { title: 'Calífiquenos', link: '/pages/califiquenos.html' }
         ];
 
