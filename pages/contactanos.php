@@ -69,15 +69,11 @@
               <p>Cel 3142296223 / 3103490629</p>
               <br>
               <p>Nuestras redes</p>
-              
               <ul id="m-soc">
                 <li><a class="twitter" href="https://twitter.com/aqualimlab" target="_blank"
                     rel="noopener noreferrer"><span>Seguir en Twitter</span></a></li>
                 <li><a class="facebook" href="https://www.facebook.com/Aqualimlab/" target="_blank"
                     rel="noopener noreferrer"><span>Facebook</span></a>
-                </li>
-                <li><a class="whatsapp" href="https://web.whatsapp.com/" target="_blank"
-                    rel="noopener noreferrer"><img src="../assets/icons/whatsapp.webp" alt="WhatsApp"><span>WhatsApp</span></a>
                 </li>
               </ul>
             </div>
@@ -93,8 +89,8 @@
                   <option value="contabilidad@aqualim.com">Contabilidad</option>
                   <option value="facturacion@aqualim.com">Facturacion</option>
                   <option value="cotizaciones@aqualim.com">Cotizaciones</option>
-                  <option value="coordinaciondereportes@aqualim.com">Reportes</option>
-                  <option value="daniel20001989@gmail.com">prueba</option>
+                  <option value="coordinadordereportes@aqualim.com">Reportes</option>
+                  
                 </select>
                 <textarea placeholder="Escribe tu mensaje aquí *" name="mensaje"></textarea>
 
@@ -111,6 +107,7 @@
         <script type="text/javascript" src="../engine1/script.js"></script>
         <script src="../js/esqueleto/menu.js"></script>
         <script src="../js/esqueleto/footer.js"></script>
+        <script src="../js/esqueleto/envioEmail.js"></script>
     </body>
 
     </html>

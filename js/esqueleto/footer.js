@@ -9,7 +9,7 @@ $(footer).append(`<footer class="footer-distributed">
   <div>
 
     <i class="glyphicon bi bi-house"></i>
-    <p><a href="../../pages/correo.html"><span>Contáctenos </span></a></p>
+    <p><a href="../../pages/contactanos.php"><span>Contáctenos </span></a></p>
   </div>
   <div>
 
